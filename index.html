@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio of Izzat Radzi - Software Engineering student">
-        <title>Home - Izzat Radzi</title>
-        <link rel="stylesheet" href="styles.css">      
+        <meta name="description" content="Portfolio of Izzat Radzi - Software Engineering student at Universiti Teknologi Malaysia specializing in web development and graphic design">
+        <meta name="theme-color" content="#F8F4E9">
+        <title>Izzat Radzi | Software Engineering Student</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preload" href="images/green.webp" as="image">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">home.</a>
-                <a href="about.html">about me.</a>
-                <a href="prodev.html">professional development.</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">home.</a></li>
+                    <li><a href="about.html">about me.</a></li>
+                    <li><a href="prodev.html">professional development.</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -21,24 +25,24 @@
                 <div class="flex-container">
                     <div class="text-content">
                         <p>
-                            i am a software engineering student,
-                            currently studying in Universiti Teknologi Malaysia,
+                            I am a software engineering student,
+                            currently studying at Universiti Teknologi Malaysia,
                             interested in web development, software development and graphic design.
                         </p>
                         <div class="buttons">
-                            <button><a href="https://www.linkedin.com/in/isaacroz/">LinkedIn</a></button>
-                            <button><a href="https://instagram.com/isaacroz_ig">Instagram</a></button>
-                            <button><a href="https://github.com/isaacroz">GitHub</a></button>
+                            <button><a href="https://www.linkedin.com/in/isaacroz/" aria-label="LinkedIn profile">LinkedIn</a></button>
+                            <button><a href="https://instagram.com/isaacroz_ig" aria-label="Instagram profile">Instagram</a></button>
+                            <button><a href="https://github.com/isaacroz" aria-label="GitHub profile">GitHub</a></button>
                         </div>
                     </div>
                     <div class="image-content">
-                        <img src="images/green.webp" width="200" height="250" alt="Portrait of Izzat Radzi">
+                        <img src="images/green.webp" width="200" height="250" alt="Portrait of Izzat Radzi" loading="lazy">
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <p>© RozPro</p>
+            <p>© <span id="current-year"></span> RozPro</p>
         </footer>
         <script src="script.js"></script>
     </body>
