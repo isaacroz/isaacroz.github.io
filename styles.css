@@ -1,0 +1,113 @@
+:root {
+  --bg: #F9F5EA;
+  --text: #3A2E20;
+  --accent: #4E5D48;
+  --button: #5A4430;
+  --button-hover: #F9F5EA;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: var(--accent);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+h1 { font-size: clamp(1.75rem, 5vw, 2.25rem); }
+h2 { font-size: clamp(1.5rem, 4vw, 1.75rem); }
+
+p, ul {
+  margin: 1rem auto;
+  max-width: 65ch;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+button {
+  border: 1px solid var(--button);
+  padding: 0.5rem;
+  background: none;
+  cursor: pointer;
+  min-width: 7rem;
+}
+
+button a {
+  color: var(--button);
+  text-decoration: none;
+}
+
+button:hover {
+  background: var(--button);
+}
+
+button:hover a {
+  color: var(--button-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.25rem;
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .artwork-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
