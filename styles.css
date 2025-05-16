@@ -1,242 +1,165 @@
-:root {
-  --bg: #FFFFDE;
-  --text: #804F4F;
-  --heading: #4F8080;
-  --button: #5A4430;
-  --button-hover: #FFFFDE;
-}
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: monospace;
-  line-height: 1.6;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    font-family: monospace;
+    background-color: #FFFFDE;
+    color: #804F4F;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-  padding: 1rem;
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    background-color: #FFFFDE;
 }
 
-footer {
-  padding: 1rem;
-  text-align: left;
-}
-
-main {
-  padding: 1rem;
-  max-width: 64rem;
-  margin: 0 auto;
-  width: 100%;
-}
-
-h1, h2, h3 {
-  color: var(--heading);
-  margin: 1rem 0;
-  text-align: center;
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.5rem; }
-
-p, ul {
-  margin: 1rem auto;
-  max-width: 65ch;
-  text-align: justify;
-}
-
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-nav a {
-  color: var(--text);
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-nav a:hover, nav a.active {
-  text-decoration: underline;
-}
-
-button {
-  border: 1px solid var(--button);
-  padding: 0.5rem;
-  background: none;
-  cursor: pointer;
-  min-width: 7rem;
-}
-
-button a {
-  color: var(--button);
-  text-decoration: none;
-}
-
-button:hover {
-  background: var(--button);
-}
-
-button:hover a {
-  color: var(--button-hover);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0.25rem;
-  margin: 0 auto;
-}
-
-img:hover {
-  opacity: 0.9;
-  transform: scale(1.01);
-  transition: all 0.3s ease;
-}
-
-.artwork-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.audio-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem 0;
-}
-
-audio {
-  margin: 0 auto;
-}
-
-.two-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-/* Add these styles to your existing CSS */
-
-/* Hamburger menu styles */
 .menu-toggle {
-  display: none;
-  cursor: pointer;
-  padding: 1rem;
-  position: absolute;
-  top: 0;
-  right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background: var(--text);
-  margin: 5px 0;
-  transition: all 0.3s ease;
-}
-
-/* Adjust header and nav for mobile */
-header {
-  padding: 1rem;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #804F4F;
+    margin: 5px 0;
 }
 
 nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
+    display: none;
+    list-style: none;
 }
 
-/* Mobile view */
-@media (max-width: 768px) {
-  .menu-toggle {
+nav.active ul {
     display: block;
-  }
-  
-  nav ul {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: var(--bg);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: right 0.3s ease;
-    z-index: 100;
-    padding: 2rem;
-  }
-  
-  nav ul.active {
-    right: 0;
-  }
-  
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-  }
 }
 
-/* Footer adjustment */
+nav a {
+    color: #804F4F;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #4F8080;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
 footer {
-  padding: 1rem;
-  text-align: left;
-  width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    background-color: #FFFFDE;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .artwork-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .two-column, .flex-container {
-    grid-template-columns: 1fr;
-    flex-direction: column;
-  }
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-content, .image-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.buttons button {
+    background-color: #4F8080;
+    color: #FFFFDE;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttons a {
+    color: #FFFFDE;
+    text-decoration: none;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.artwork-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.artwork-grid img:hover {
+    transform: scale(1.05);
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.audio-player {
+    margin: 20px 0;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
 }
