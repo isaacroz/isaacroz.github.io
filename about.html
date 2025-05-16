@@ -1,82 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="About Izzat Radzi - Software Engineering student and digital artist">
-        <title>About - Izzat Radzi</title>
+        <meta name="description" content="About Izzat Radzi - Software Engineering student and digital artist showcasing artwork and music">
+        <meta name="theme-color" content="#F8F4E9">
+        <title>About - Izzat Radzi | Software Engineering Student</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preload" href="images/1.webp" as="image" media="(min-width: 600px)">
+        <link rel="preload" href="images/2.webp" as="image" media="(min-width: 600px)">
+        <link rel="preload" href="images/3.webp" as="image" media="(min-width: 600px)">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">home.</a>
-                <a href="about.html">about me.</a>
-                <a href="prodev.html">professional development.</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">home.</a></li>
+                    <li><a href="about.html">about me.</a></li>
+                    <li><a href="prodev.html">professional development.</a></li>
+                </ul>
             </nav>
         </header>
         <main>
             <section class="content-section">
                 <h1>about me.</h1>
                 <p>
-                    during my diploma of civil engineering, i discovered my passion for computer science
-                    since i would enjoy and excel at things related to software and programming. 
-                    after the completiong of my diploma, i decided to pursue a degree in software engineering.
+                    During my diploma of civil engineering, I discovered my passion for computer science
+                    since I would enjoy and excel at things related to software and programming. 
+                    After completing my diploma, I decided to pursue a degree in software engineering.
                 </p>
                 <p>
-                    although i'm still a student, i've gathered a lot of skills and experiences.
-                    i have familiarised myself with software like VS Code, Blender, Figma, WPS Office, 
-                    and i have a fair amount of kowledge in programming languages like HTML, CSS, JavaScript, and C++ and Java.
-                </p><br>
+                    Although I'm still a student, I've gathered many skills and experiences.
+                    I've familiarized myself with software like VS Code, Blender, Figma, WPS Office, 
+                    and I have a fair amount of knowledge in programming languages like HTML, CSS, JavaScript, C++, and Java.
+                </p>
+                
                 <h2>my artwork.</h2>
                 <p>
-                    here's a collection of my digital artwork and designs that i've created over the years.
-                    each piece represents my growth and exploration in digital art. 
-                    you can visit my graphic design portfolio to see more.
+                    Here's a collection of my digital artwork and designs that I've created over the years.
+                    Each piece represents my growth and exploration in digital art. 
+                    You can visit my graphic design portfolio to see more.
                 </p>
                 
                 <div class="artwork-grid">
-                    <img src="images/1.webp" width="300" height="300" alt="Artwork 1">
-                    <img src="images/2.webp" width="300" height="300" alt="Artwork 2">
-                    <img src="images/3.webp" width="300" height="300" alt="Artwork 3">
-                    <img src="images/4.webp" width="300" height="300" alt="Artwork 4">
-                    <img src="images/5.webp" width="300" height="300" alt="Artwork 5">
-                    <img src="images/6.webp" width="300" height="300" alt="Artwork 6">
-                    <img src="images/7.webp" width="300" height="300" alt="Artwork 7">
-                    <img src="images/8.webp" width="300" height="300" alt="Artwork 8">
-                    <img src="images/9.webp" width="300" height="300" alt="Artwork 9">
-                    <img src="images/10.webp" width="300" height="300" alt="Artwork 10">
-                    <img src="images/11.webp" width="300" height="300" alt="Artwork 11">
-                    <img src="images/12.webp" width="300" height="300" alt="Artwork 12">
-                    <img src="images/13.webp" width="300" height="300" alt="Artwork 13">
-                    <img src="images/14.webp" width="300" height="300" alt="Artwork 14">
-                    <img src="images/15.webp" width="300" height="300" alt="Artwork 15">
-                    <img src="images/16.webp" width="300" height="300" alt="Artwork 16">
-                    <img src="images/17.webp" width="300" height="300" alt="Artwork 17">
-                    <img src="images/18.webp" width="300" height="300" alt="Artwork 18">
-                </div><br>
-
+                    <!-- First row of images loaded normally -->
+                    <img src="images/1.webp" width="300" height="300" alt="diving normal." loading="eager">
+                    <img src="images/2.webp" width="300" height="300" alt="naruto." loading="eager">
+                    <img src="images/3.webp" width="300" height="300" alt="zara." loading="eager">
+                    
+                    <!-- Remaining images lazy-loaded -->
+                    <img src="images/4.webp" width="300" height="300" alt="josh and abbie" loading="lazy">
+                    <img src="images/5.webp" width="300" height="300" alt="avengers 2" loading="lazy">
+                    <img src="images/6.webp" width="300" height="300" alt="the chase" loading="lazy">
+                    <img src="images/7.webp" width="300" height="300" alt="rogue one" loading="lazy">
+                    <img src="images/8.webp" width="300" height="300" alt="eternals" loading="lazy">
+                    <img src="images/9.webp" width="300" height="300" alt="the lion king" loading="lazy">
+                    <img src="images/10.webp" width="300" height="300" alt="uniqlo" loading="lazy">
+                    <img src="images/11.webp" width="300" height="300" alt="spirited away" loading="lazy">
+                    <img src="images/12.webp" width="300" height="300" alt="justice league" loading="lazy">
+                    <img src="images/13.webp" width="300" height="300" alt="bumblebee" loading="lazy">
+                    <img src="images/14.webp" width="300" height="300" alt=frozen" loading="lazy">
+                    <img src="images/15.webp" width="300" height="300" alt="tron 2" loading="lazy">
+                    <img src="images/16.webp" width="300" height="300" alt="hobbit" loading="lazy">
+                    <img src="images/17.webp" width="300" height="300" alt="black panther" loading="lazy">
+                    <img src="images/18.webp" width="300" height="300" alt="tangled" loading="lazy">
+                </div>
+                
                 <h2>about me. again. lol.</h2>
-                <p>i love music, art and entertainment. 
-                    i played piano my whole life, 
-                    since i taught myself to play piano on my tablet 
-                    when i was around 7,
-                    but never got good at it, just enough to write songs.
-                    if the opportunity arises, i would love to pursue music 
-                    as a part of my career.
+                <p>I love music, art and entertainment. 
+                    I've played piano my whole life, 
+                    since I taught myself to play piano on my tablet 
+                    when I was around 7 years old,
+                    but never got really good at it, just enough to write songs.
+                    If the opportunity arises, I would love to pursue music 
+                    as part of my career.
                 </p>
                 
                 <div class="audio-player">
-                    <h3>here's a little something i wrote in around 10 minutes:</h3>
-                    <audio controls>
-                        <source src="/music/song-snippet.mp3" type="audio/mpeg">
-                        <source src="/music/song-snippet.m4a" type="audio/mpeg">
+                    <h3>Here's a little something I wrote in about 10 minutes:</h3>
+                    <audio controls preload="none">
+                        <source src="music/song-snippet.mp3" type="audio/mpeg">
+                        <source src="music/song-snippet.m4a" type="audio/mpeg">
+                        Your browser does not support the audio element.
                     </audio>
                 </div>
             </section>
         </main>
         <footer>
-            <p>© RozPro</p>
+            <p>© <span id="current-year"></span> RozPro</p>
         </footer>
         <script src="script.js"></script>
     </body>
