@@ -1,0 +1,201 @@
+/* Minimal reset and base styles */
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #F8F4E9;
+  color: #4A3C2A;
+  font-size: 16px;
+}
+header {
+  padding: 20px 0;
+}
+main {
+  padding: 20px 5%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #4A3C2A;
+}
+
+/* Typography */
+h1, h2 {
+  text-align: center;
+  color: #5A6D57;
+  margin: 20px 0;
+}
+h1 {
+  font-size: 2.25rem;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  text-align: justify;
+  margin: 15px 0;
+  line-height: 1.7;
+}
+
+/* Navigation */
+nav {
+  text-align: right;
+  padding: 0 10px;
+}
+nav a {
+  color: #4A3C2A;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+  font-weight: 600;
+}
+nav a:hover, nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Layout components */
+.content-section {
+  margin: 20px auto;
+  padding: 0 10px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px auto;
+}
+.text-content, .image-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+button {
+  border: 1px solid #6B4F3A;
+  padding: 6px 12px;
+  background: none;
+  cursor: pointer;
+  font-family: monospace;
+  transition: all 0.2s;
+}
+button a {
+  color: #6B4F3A;
+  text-decoration: none;
+}
+button:hover {
+  background-color: #6B4F3A;
+}
+button:hover a {
+  color: #F8F4E9;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4%;
+}
+
+/* Artwork Grid */
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+.artwork-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.artwork-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Audio Player */
+.audio-player {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #F8F4E9;
+  border: 1px solid #6B4F3A;
+  border-radius: 8px;
+  text-align: center;
+}
+.audio-player h3 {
+  color: #5A6D57;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+/* Poster Container */
+.poster-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.poster-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 7%;
+  }
+  .artwork-grid {
+    gap: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding: 20px 4%;
+  }
+  nav {
+    text-align: center;
+    padding: 5px;
+  }
+  .flex-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .artwork-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  button {
+    flex: 1 0 auto;
+    min-width: 100px;
+    text-align: center;
+  }
+}
