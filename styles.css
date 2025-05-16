@@ -12,11 +12,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 20px 0;
     background-color: #FFFFDE;
 }
@@ -25,6 +26,8 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
+    justify-content: center;
+    padding: 0;
 }
 
 nav a {
@@ -51,13 +54,14 @@ h3 {
 }
 
 p {
-    text-align: justify;
-    margin: 10px 0;
+    text-align: center;
+    margin: 10px auto;
     font-size: 1em;
+    max-width: 800px;
 }
 
 footer {
-    text-align: left;
+    text-align: center;
     padding: 20px 0;
     background-color: #FFFFDE;
 }
@@ -68,17 +72,21 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin: 0 auto;
 }
 
 .text-content, .image-content {
     flex: 1;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .buttons {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    margin: 20px auto;
     justify-content: center;
 }
 
@@ -97,13 +105,16 @@ footer {
 
 .artwork-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
-    margin: 20px 0;
+    margin: 20px auto;
+    justify-items: center;
+    max-width: 1200px;
 }
 
 .artwork-grid img {
     width: 100%;
+    max-width: 300px;
     height: auto;
     transition: transform 0.3s;
 }
@@ -116,11 +127,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    text-align: left;
+    text-align: center;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .audio-player {
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 400px;
 }
 
 audio {
@@ -136,4 +151,16 @@ img {
 
 img:hover {
     transform: scale(1.05);
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+li {
+    text-align: left;
+    margin-left: 20px;
 }
