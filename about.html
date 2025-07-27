@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="About Izzat Radzi - Software engineering student, digital artist, and musician">
-        <title>About Me | RozPro</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">home.</a></li>
-                    <li><a href="about.html">about me.</a></li>
-                    <li><a href="prodev.html">celcomdigi.</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="content-section">
-                <h1>about me.</h1>
-                <p>
-                    as a student, i've gained skills in VS Code, Blender, Figma, and WPS Office, along with programming knowledge in HTML, CSS, JavaScript, C++, and Java.
-                </p>
-                <h2>my artwork.</h2>
-                <p>
-                    here's a collection of my digital artwork and designs that i've created over the years.
-                </p>
-                
-                <div class="artwork-grid">
-                    <img src="images/1.webp" width="300" height="300" alt="Artwork 1" loading="lazy" decoding="async">
-                    <img src="images/3.webp" width="300" height="300" alt="Artwork 3" loading="lazy" decoding="async">
-                    <img src="images/4.webp" width="300" height="300" alt="Artwork 4" loading="lazy" decoding="async">
-                    <img src="images/6.webp" width="300" height="300" alt="Artwork 6" loading="lazy" decoding="async">
-                    <img src="images/7.webp" width="300" height="300" alt="Artwork 7" loading="lazy" decoding="async">
-                    <img src="images/8.webp" width="300" height="300" alt="Artwork 8" loading="lazy" decoding="async">
-                    <img src="images/9.webp" width="300" height="300" alt="Artwork 9" loading="lazy" decoding="async">
-                    <img src="images/10.webp" width="300" height="300" alt="Artwork 10" loading="lazy" decoding="async">
-                    <img src="images/11.webp" width="300" height="300" alt="Artwork 11" loading="lazy" decoding="async">
-                    <img src="images/14.webp" width="300" height="300" alt="Artwork 14" loading="lazy" decoding="async">
-                    <img src="images/15.webp" width="300" height="300" alt="Artwork 15" loading="lazy" decoding="async">
-                    <img src="images/18.webp" width="300" height="300" alt="Artwork 18" loading="lazy" decoding="async">
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Izzat Radzi - Software engineering student, digital artist, and musician">
+    <title>About Me | RozPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="images/1.webp" as="image">
+    <link rel="preload" href="images/2.webp" as="image">
+    <link rel="preload" href="images/3.webp" as="image">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">home.</a></li>
+                <li><a href="about.html">about me.</a></li>
+                <li><a href="prodev.html">celcomdigi.</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section">
+            <h1>about me.</h1>
+            <p>
+                as a student, i've gained skills in VS Code, Blender, Figma, and WPS Office, along with programming knowledge in HTML, CSS, JavaScript, C++, and Java.
+            </p>
+            <hr class="divider">
 
-                <h2>about me. again. lol.</h2>
-                <p>
-                    i've loved music, art, and entertainment since childhood. i taught myself piano on a tablet at age 7 and still play, though just well enough to write songs. if given the chance, i'd love to pursue music as part of my career.
-                </p>
-                
-                <div class="audio-player">
-                    <h3>here's a little something i wrote in around 10 minutes:</h3>
-                    <audio controls preload="metadata">
-                        <source src="/music/song-snippet.mp3" type="audio/mpeg">
-                        <source src="/music/song-snippet.m4a" type="audio/mpeg">
-                    </audio>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>© RozPro</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+            <h2>my artwork.</h2>
+            <p>
+                here's a collection of my digital artwork and designs that i've created over the years.
+            </p>
+            <div class="artwork-grid">
+                <img src="images/1.webp" alt="Digital artwork 1" loading="lazy" decoding="async">
+                <img src="images/2.webp" alt="Digital artwork 2" loading="lazy" decoding="async">
+                <img src="images/3.webp" alt="Digital artwork 3" loading="lazy" decoding="async">
+                <img src="images/4.webp" alt="Digital artwork 4" loading="lazy" decoding="async">
+                <img src="images/5.webp" alt="Digital artwork 5" loading="lazy" decoding="async">
+                <img src="images/6.webp" alt="Digital artwork 6" loading="lazy" decoding="async">
+                <img src="images/7.webp" alt="Digital artwork 7" loading="lazy" decoding="async">
+                <img src="images/8.webp" alt="Digital artwork 8" loading="lazy" decoding="async">
+                <img src="images/9.webp" alt="Digital artwork 9" loading="lazy" decoding="async">
+                <img src="images/10.webp" alt="Digital artwork 10" loading="lazy" decoding="async">
+                <img src="images/11.webp" alt="Digital artwork 11" loading="lazy" decoding="async">
+                <img src="images/12.webp" alt="Digital artwork 12" loading="lazy" decoding="async">
+                <img src="images/13.webp" alt="Digital artwork 13" loading="lazy" decoding="async">
+                <img src="images/14.webp" alt="Digital artwork 14" loading="lazy" decoding="async">
+                <img src="images/15.webp" alt="Digital artwork 15" loading="lazy" decoding="async">
+                <img src="images/16.webp" alt="Digital artwork 16" loading="lazy" decoding="async">
+                <img src="images/17.webp" alt="Digital artwork 17" loading="lazy" decoding="async">
+                <img src="images/18.webp" alt="Digital artwork 18" loading="lazy" decoding="async">
+            </div>
+            <hr class="divider">
+
+            <h2>music & interests.</h2>
+            <p>
+                i've loved music, art, and entertainment since childhood. i taught myself piano on a tablet at age 7 and still play, though just well enough to write songs. if given the chance, i'd love to pursue music as part of my career.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> RozPro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
