@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CelcomDigi | RozPro</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">home.</a></li>
-                    <li><a href="about.html">about me.</a></li>
-                    <li><a href="prodev.html">celcomdigi.</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="content-section">
-                <h1>professional development.</h1>
-                <div class="two-column">
-                    <div>
-                        <p>The CelcomDigi Young Talent Programme is a 2-year leadership initiative for young Malaysians to gain telco-tech industry experience through mentorship and innovative projects.</p>
-                        
-                        <h2>highlights.</h2>
-                        <ul>
-                            <li><strong>Specialized Paths:</strong> Choose from various competency streams</li>
-                            <li><strong>Learning:</strong> Cutting-edge tools and knowledge</li>
-                            <li><strong>Networking:</strong> Connect with industry leaders</li>
-                            <li><strong>Innovation:</strong> Solve real industry challenges</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="images/celcomdigi.webp" width="400" height="300" alt="CelcomDigi programme">
-                        
-                        <h2>benefits.</h2>
-                        <ul>
-                            <li>Exposure to 5G, AI, cloud computing</li>
-                            <li>Career-accelerating skills</li>
-                            <li>Practical problem-solving experience</li>
-                        </ul>
-                        
-                        <h2>eligibility.</h2>
-                        <p>Malaysians ≤25 years old (2025), fresh grads or <2 years experience, with relevant degree.</p>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelcomDigi | RozPro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">home.</a></li>
+                <li><a href="about.html">about me.</a></li>
+                <li><a href="prodev.html">celcomdigi.</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section">
+            <h1>professional development.</h1>
+            <div class="two-column">
+                <div>
+                    <p>The CelcomDigi Young Talent Programme is a 2-year leadership initiative for young Malaysians to gain telco-tech industry experience through mentorship and innovative projects.</p>
+                    <h2>highlights.</h2>
+                    <ul>
+                        <li><strong>Specialized Paths:</strong> Choose from various competency streams</li>
+                        <li><strong>Learning:</strong> Cutting-edge tools and knowledge</li>
+                        <li><strong>Networking:</strong> Connect with industry leaders</li>
+                        <li><strong>Innovation:</strong> Solve real industry challenges</li>
+                    </ul>
                 </div>
-                
-                <h2>programme poster.</h2>
-                <div class="image-content">
-                    <img src="images/celcomposter.webp" width="600" height="800" alt="Programme poster">
+                <div>
+                    <img src="images/celcomdigi.webp" width="400" height="300" alt="CelcomDigi Young Talent Programme" loading="lazy">
+                    <h2>benefits.</h2>
+                    <ul>
+                        <li>Exposure to 5G, AI, cloud computing</li>
+                        <li>Career-accelerating skills</li>
+                        <li>Practical problem-solving experience</li>
+                    </ul>
+                    <h2>eligibility.</h2>
+                    <p>Malaysians ≤25 years old (2025), fresh grads or &lt;2 years experience, with relevant degree.</p>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p>© RozPro</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+            </div>
+            <hr class="divider">
+            <h2>programme poster.</h2>
+            <div class="image-content">
+                <img src="images/celcomposter.webp" width="600" height="800" alt="CelcomDigi Programme Poster" loading="lazy">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> RozPro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
